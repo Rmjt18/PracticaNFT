@@ -41,7 +41,9 @@
     /* esto es cambio */
 }
 header{
-    background: var(--secondary);
+    /* background: var(--secondary); */
+    background: linear-gradient(to bottom, #121e3c, var(--background) );
+
     display: flex;
     /* justify-content: flex-end; */
     justify-content: space-between;
@@ -78,15 +80,27 @@ header{
     
 }
 
-.car-icon{
+#cart-toggle{
+display: none;   
+}
+
+.cart-icon{
 padding: 5px 10px;
 height: 30px;
 cursor: pointer;
 margin-left: 150px;
 }
-/*---------- hero sections -----------*/
 
-main {
+
+.cart{
+    position: absolute;
+    right: 0;
+    top: 65px;
+    background: linear-gradient(to top, #121e3c,
+    var(--background);
+
+}
+.main {
     background: var(--background);
     display: flex;
     flex-direction: column;
@@ -96,6 +110,7 @@ main {
     color: white;
 
 }
+
 #hero{
     max-width: 1200px;
     /* o margin0 auto */
@@ -119,6 +134,10 @@ main {
     font-weight: 800;
     width: 80%;
     min-width: 500px;
+    background: linear-gradient( to top, #30cfd0, #c43ad6);
+    color: transparent;
+    background-clip: text ;
+    -webkit-background-clip: text;
 }
 
 
@@ -449,6 +468,11 @@ footer p {
 footer span{
     font-weight: 800;
 }
+
+
+
+/*---------- hero sections -----------*/
+
 
 
 
